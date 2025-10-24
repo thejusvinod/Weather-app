@@ -1,0 +1,9 @@
+services:
+  - type: static
+    name: weather-app
+    buildCommand: ""
+    publish: Weather-app
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache
